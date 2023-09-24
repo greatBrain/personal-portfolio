@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Fana</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/index-styles.css">
+    <link rel="stylesheet" href="css/skills-styles.css">
+</head>
+
+<body>
+
+    <div class="container window-global-container">        
+        <section class="left-panel">
+            <nav id="nav-bar">
+                <div class="window-dots">
+                    <span class="dot" id="red-dot"></span>
+                    <span class="dot" id="yellow-dot"></span>
+                    <span class="dot" id="green-dot"></span>
+                </div>
+            </nav>
+
+            <div class="items-container">   
+
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle">
+                            <img src="src/icons/profile.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Quien soy</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle">
+                            <img src="src/icons/skills.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Habilidades</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link  align-middle">
+                            <img src="src/icons/projects-icon.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Proyectos</span> 
+                        </a>                        
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  align-middle">
+                            <img src="src/icons/contact-icon.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Contactos</span>
+                        </a>
+                    </li> 
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  align-middle">
+                            <img src="src/icons/other-skills-icon.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Otros intereses</span>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </section>
+
+        <section class="right-panel">
+
+            <div class="aboutme-container pt-3">
+                <div class="avatar col-lg-12 col-md-12">
+                    <img src="src/img/avatar.jpg" alt="">
+                    <h1>Erick Misael Fana Portes</h1>
+                    <h5 class="pt-1">{ Software developer }</h5>
+                    <p class="descr text-justify col-lg-8 col-md-8 pt-3 pb-3">
+                        Soy alguien en constante aprendizaje que transforma el café en código, 
+                        mata <i>bugs</i> con un teclado, apasionado por la resolución de problemas y puede usar como arma al poderosisimo HTML.
+                    </p>
+
+                    <button class="next-button">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+
+            <div class="skills-container hidden col-lg-12 col-md-12">
+                <!-- <h1 class="pt-4 text-center">Habilidades</h1> -->
+                <div class="container tech-skills-container">
+                    <div class="skills-item technical-skills">
+                        <h4>Habilidades Tecnicas</h4>
+                        <ul class="list-active" id="programming">
+                            <p>Lenguajes de programacion y bases de datos</p>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>SQL Server</li>
+                            <li>MySQL</li>
+                        </ul>
+
+                        <ul class="hidden" id="web-design">
+                            <p>Diseno web</p>
+                            <li>HTML5</li>
+                            <li>CSS3 - Bootstrap- Tailwind</li>                            
+                        </ul>
+
+                        <ul class="hidden" id="tools-frameworks">
+                            <p>Herramientas y frameworks</p>
+                            <li>Vim/Neovim editor</li>
+                            <li>VS Code</li>                            
+                            <li>Python frameworks: Django, Flask, FastApi, Selenium</li>                            
+                            <li>Manejador de paquetes Pip</li>                            
+                        </ul>
+
+                        <ul class="hidden" id="operating-systems">
+                            <p>Sistemas operativos</p>
+                            <li>GNU/Linux (El mejor!)</li>
+                            <li>Windows (naaaah)</li>
+                            <li>Macos (ahi todo cuesta)</li>                            
+                        </ul>
+
+                        <ul class="hidden" id="others">
+                            <p>Adicionales</p>
+                            <li>RESTful API diseno e implementacion</li>
+                            <li>Contenedores Docker</li>
+                            <li>LLM ChatGPT</li>
+                            <li>Ingles</li>
+                            <li>Frances</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container soft-skills-container">    
+                    <div class="skills-item soft-skills">
+                        <h4>Habilidades blandas</h4>
+                        <ul>
+                            <li>Comunicacion</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Facil adaptable</li>
+                            <li>Creativo</li>
+                            <li>Problem solving</li>
+                            <li>Liderazgo</li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+
+
+            <div class="projects-container hidden">
+            </div>
+
+            <div class="contacts-container hidden">
+            </div>
+
+            <div class="other-skills-container hidden">
+            </div>
+
+        </section>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+</html>

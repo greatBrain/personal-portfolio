@@ -1,0 +1,59 @@
+/* .skills-container h1
+{
+    background: #7C9BCF;
+    background: -webkit-linear-gradient(to left, #7C9BCF 0%, #7ACF8E 100%);
+    background: -moz-linear-gradient(to left, #7C9BCF 0%, #7ACF8E 100%);
+    background: linear-gradient(to left, #7C9BCF 0%, #7ACF8E 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.skills-container .container
+{
+    display: flex;  
+    flex-direction: column;  
+}
+
+.tech-skills-container
+{
+    align-items: flex-start;
+}
+
+.soft-skills-container
+{
+    align-items: flex-end;
+}
+
+.skills-container .skills-item
+{   
+    margin-top: 8%;
+    width: 480px;
+    height: auto;     
+    background: rgba(229, 227, 244, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(229, 227, 244, 0.1);
+}
+
+.skills-item h4
+{
+    text-align: center;
+}
+
+.skills-item ul>li
+{
+    list-style: none;
+}
+
+.technical-skills
+{
+    align-items: flex-start;
+}
+
+.soft-skills
+{
+    align-items: flex-end;
+}
