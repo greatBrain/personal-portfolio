@@ -12,9 +12,14 @@
 
 <body>
 
+    <!-- DRY Don't Repeat Yourself. This already exists and i just copied.-->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
     <div class="container window-global-container">        
         <section class="left-panel">
-            <nav id="nav-bar">
+            <nav id="nav-bar" class="col-md-12 hidden-sm">
                 <div class="window-dots">
                     <span class="dot" id="red-dot"></span>
                     <span class="dot" id="yellow-dot"></span>
@@ -24,7 +29,7 @@
 
             <div class="items-container">   
 
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start d-flex" id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link align-middle">
                             <img src="src/icons/profile.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Quien soy</span>
@@ -60,23 +65,25 @@
 
         <section class="right-panel">
 
-            <div class="aboutme-container pt-3">
+            <div class="aboutme-container pt-3 active" id="about-me">
                 <div class="avatar col-lg-12 col-md-12">
                     <img src="src/img/avatar.jpg" alt="">
                     <h1>Erick Misael Fana Portes</h1>
-                    <h5 class="pt-1">{ Software developer }</h5>
+                    <h3 class="pt-1">Software developer</h3>
                     <p class="descr text-justify col-lg-8 col-md-8 pt-3 pb-3">
                         Soy alguien en constante aprendizaje que transforma el café en código, 
-                        mata <i>bugs</i> con un teclado, apasionado por la resolución de problemas y puede usar como arma al poderosisimo HTML.
+                        mata <i>bugs</i> con un teclado y puede usar como arma al poderosisimo HTML.
                     </p>
 
                     <button class="next-button">
-                        Siguiente
+                        <a href="#skills">
+                           Siguiente
+                        </a>
                     </button>
                 </div>
             </div>
 
-            <div class="skills-container hidden col-lg-12 col-md-12">
+            <div class="skills-container hidden col-lg-12 col-md-12" id="skills">
                 <!-- <h1 class="pt-4 text-center">Habilidades</h1> -->
                 <div class="container tech-skills-container">
                     <div class="skills-item technical-skills">
