@@ -3,17 +3,24 @@
     display: flex;      
 }
 
+.skills-main-icon
+{
+    width: 180px;
+    border-radius: 50%;
+}
+
 .skills-container .skills-item
 {   
     margin-top: 8%;
     width: 480px;
     height: auto; 
-    background: rgba(77, 153, 223, 0.9);
+
+
+    background: rgba(0, 0, 0, 0.44);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.8px);
-    -webkit-backdrop-filter: blur(1.8px);
-    border: 1px solid rgba(77, 153, 223, 0.3);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);   
 }
 
 .skills-item h4
@@ -56,4 +63,57 @@
 .soft-skills
 {
     align-items: flex-end;
+}
+
+#inner-skills-window
+{
+    width:85%;
+    height: 75%;
+    border-radius: 16px;
+    margin-top: -30%;
+    background-color: rgb(76,76,85);
+    box-shadow: 0 4px 30px rgba(182, 37, 196, 0.2 );
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);    
+    -webkit-box-shadow: 4px 6px 51px -6px rgb(0, 0, 0);
+    -moz-box-shadow: 4px 6px 51px -6px rgb(0, 0, 0);
+    box-shadow: 2px 4px 31px -3px rgb(0, 0, 0);   
+    z-index: 1;
+}
+
+.window-dots
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.dot
+{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;    
+    margin: 5px;
+
+}
+
+#red-dot
+{
+background-color: #ca3636;
+}
+
+#yellow-dot
+{
+ background-color: #f1c122;   
+}
+
+#green-dot
+{
+  background-color: #0fca37;  
+}
+
+.window-dots:hover
+{
+    cursor: pointer;
 }
