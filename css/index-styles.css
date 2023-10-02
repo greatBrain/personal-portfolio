@@ -86,6 +86,11 @@ html, body
     opacity:1;
 }
 
+.inactive
+{
+    opacity:0;
+}
+
 .window-global-container
 {
     margin-top: 5%;
