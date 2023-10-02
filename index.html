@@ -27,12 +27,12 @@
                 </div>
             </nav>
 
-            <div class="items-container">   
+            <div class="items-container"> 
 
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start d-flex" id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link align-middle">
-                            <img src="src/icons/profile.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Quien soy</span>
+                            <img src="src/img/avatar.jpg" class="icon" alt=""><span class="ms-1 d-none d-sm-inline">Quien soy</span>
                         </a>
                     </li>
 
@@ -83,18 +83,33 @@
                 </div>
             </div> -->
 
-            <div class="skills-container" id="skills">     
-                <!-- <div class="container ">
-                    <img src="src/icons/skills.jpg" class="skills-main-icon" alt="">
-                </div> -->
-                <div class="container tech-skills-container">                    
-                    <div class="skills-item technical-skills ">
-                        <h4 class="text-start pl-4 pt-3">Habilidades tecnicas</h4>
-                        <ul class="list-active" id="programming-tools" data-bs-toggle="modal" data-bs-target="#inner-window">                           
-                            <li><img src="src/icons/coding.png" id="skill-icon"> Lenguajes y frameworks</li>
-                            <li><li><img src="src/icons/terminal.png" id="skill-icon"> Sistemas operativos</li>
-                            <li><li><img src="src/icons/database.png" id="skill-icon"> Bases de datos</li>                            
-                            <li><li><img src="src/icons/website-design.png" id="skill-icon"> Frontend</li>
+            <div class="cards col-lg-12 col-md-12">
+                <div class="tech-skills-card">
+                    <p class="card-item">
+                        <img src="src/icons/terminal.png" id="skill-icon"> 
+                        Habilidades tecnicas
+                    </p>
+
+                </div>
+
+                <div class="soft-skills-card">
+                    <p class="card-item">
+                        <img src="src/icons/terminal.png" id="skill-icon"> 
+                        Habilidades blandas
+                    </p>
+                </div>
+            </div>
+            <div class="container" id="skills-global-container">               
+
+                <div class="tech-skills-container col-sm-6 col-xs-12">                    
+                    <!-- <div class="skills-item technical-skills">
+                        <h4 class="text-start pl-4 pt-3 pb-4">Habilidades tecnicas</h4>
+                        <ul class="list-active" id="programming-tools" data-bs-toggle="modal" data-bs-target="#inner-window">                                                       
+                            <li class="card" onclick="showWindow()"><img src="src/icons/coding.png" id="skill-icon"> Tecnologias</li>
+                            <li class="card"><img src="src/icons/terminal.png" id="skill-icon"> Sistemas operativos</li>
+                            <li class="card"><img src="src/icons/database.png" id="skill-icon"> Bases de datos</li>                            
+                            <li class="card"><img src="src/icons/website-design.png" id="skill-icon"> Frontend</li>
+                            <li class="card"><img src="src/icons/language.png" id="skill-icon"> Idiomas</li>
                         </ul>
 
                         <ul class="hidden" id="web-design">
@@ -126,31 +141,33 @@
                             <li>Ingles</li>
                             <li>Frances</li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="container soft-skills-container">    
-                    <div class="skills-item soft-skills">
+                <div class="hidden container soft-skills-container col-sm-6 col-xs-12">    
+                    <div class="skills-item soft-skills">                        
                         <h4 class="text-start pt-3">Habilidades blandas</h4>
-                        <ul>
-                            <li>Comunicacion</li>
-                            <li>Trabajo en equipo</li>
-                            <li>Facil adaptable</li>
-                            <li>Creativo</li>
-                            <li>Problem solving</li>
-                            <li>Liderazgo</li>
+                        <ul id="soft-skills-cards">                             
+                            <li class="card">Comunicacion</li>
+                            <li class="card">Trabajo en equipo</li>
+                            <li class="card">Facil adaptable</li>
+                            <li class="card">Creativo</li>
+                            <li class="card">Problem solving</li>
+                            <li class="card">Liderazgo</li>
                         </ul>
                     </div>
                 </div>                
             </div>
 
+            <!-- inner-window -->
             <div class="container window" id="inner-skills-window">              
                 <div class="window-dots">
-                    <span class="dot" id="red-dot" onclick="close()"></span>
-                    <span class="dot" id="yellow-dot"></span>
-                    <!--<span class="dot" id="green-dot"></span> -->
+                    <span class="dot" id="red-dot" onclick="closeWindow()"></span>
+                    <!-- <span class="dot" id="yellow-dot"></span> -->
+                    <span class="dot" id="green-dot"></span>
                 </div>                    
             </div>
+            <!-- End inner-window -->
 
             <div class="projects-container hidden">
             </div>
@@ -159,21 +176,11 @@
             </div>
 
             <div class="other-skills-container hidden">                
-            </div>
-            
+            </div>          
 
         </section>
-    </div>
-
-    <!-- inner-window -->
-    
-    <!-- End inner-window -->
+    </div>    
 </body>
 
 <script src="js/index.js"></script>
-<script>
-    // function close(){
-        
-    // }
-</script>
 </html>

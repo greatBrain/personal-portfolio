@@ -1,7 +1,54 @@
-.skills-container
+.cards
 {
-    display: flex;      
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
+
+.cards .tech-skills-card
+{
+    width: 410px;
+    height: 120px;
+    margin-top: 2%;
+    border-radius: 16px;
+    background: rgba( 0, 0, 0, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba(48, 57, 182, 0.37);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+    
+}
+
+.cards .soft-skills-card
+{
+    width: 410px;
+    height: 120px;
+    margin-top: 2%;
+    border-radius: 16px;
+    background: rgba( 0, 0, 0, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba(48, 57, 182, 0.37);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+}
+
+#skills-global-container
+{
+    width:80%;
+    height: 65%;
+    margin-top: 3%;
+    border-radius: 16px;
+    background: rgba( 0, 0, 0, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba(48, 57, 182, 0.37);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 10px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+
+
+
 
 .skills-main-icon
 {
@@ -15,25 +62,29 @@
     width: 480px;
     height: auto; 
 
-
     background: rgba(0, 0, 0, 0.44);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.7px);
-    -webkit-backdrop-filter: blur(9.7px);   
+    -webkit-backdrop-filter: blur(9.7px);       
 }
 
 .skills-item h4
 {
-    text-align: left;
-    padding-left: 6%;
-    font-weight: 800px;
+    text-align: center;    
+    font-weight: 500;   
+    background: #ffffff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #1de27c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #1de27c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .skills-item ul>li
 {
     list-style: none;
-    padding: 5px;
+    padding: 2%;
 }
 
 .skills-item li:hover
@@ -41,32 +92,17 @@
    cursor: pointer;
 }
 
-.technical-skills
-{
-    display: flex;
-    /* align-items: flex-start; */
-    flex-direction: column;
-}
 
-.technical-skills #skill-icon
-{
-    width: 60px;
-}
 
-.technical-skills #programming-tools
-{
-    color: #FFF;
-    font-size: 22px;
-    font-weight: 500;
-}
 
-.soft-skills
-{
-    align-items: flex-end;
-}
+
+
+
+
 
 #inner-skills-window
 {
+    display: none;
     width:85%;
     height: 75%;
     border-radius: 16px;
