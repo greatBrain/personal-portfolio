@@ -1,11 +1,31 @@
 .cards
 {
     display: flex;
+    flex-direction: row;
     justify-content:space-evenly;
     flex-wrap: wrap;
 }
 
-.cards .tech-skills-card
+.cards .card-item
+{
+    display: flex;
+    color: #FFF;    
+    padding: 5.5%;    
+}
+
+.cards .card-item p
+{
+    padding: 1.5%;
+    font-size: 18px;
+}
+
+.cards img
+{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.cards .tech-skills-card, .soft-skills-card
 {
     width: 410px;
     height: 120px;
@@ -16,20 +36,19 @@
     backdrop-filter: blur( 14px );
     -webkit-backdrop-filter: blur( 14px );
     border-radius: 10px;
+    transition: ease-in-out 1s;
     
 }
 
-.cards .soft-skills-card
+.cards .tech-skills-card:hover, .soft-skills-card:hover
 {
-    width: 410px;
-    height: 120px;
-    margin-top: 2%;
-    border-radius: 16px;
-    background: rgba( 0, 0, 0, 0.85 );
-    box-shadow: 0 8px 32px 0 rgba(48, 57, 182, 0.37);
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-    border-radius: 10px;
+    cursor: pointer;        
+    background: hsla(270, 94%, 25%, 1);
+    background: linear-gradient(90deg, rgb(83, 5, 107) 0%, rgb(10, 215, 230) 100%);
+    background: -moz-linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, rgb(10, 215, 230) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(63, 3, 122) 0%, rgb(10, 215, 230) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#42047E", endColorstr="#07F49E", GradientType=1 );
+    overflow: hidden;
 }
 
 #skills-global-container
