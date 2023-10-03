@@ -1,0 +1,57 @@
+/* Scroll bar */
+.scroll-bar::-webkit-scrollbar 
+{
+    width: 10px;
+}
+   
+.scroll-bar::-webkit-scrollbar-thumb 
+{
+    background: #666;
+    border-radius: 20px;
+}
+  
+.scroll-bar::-webkit-scrollbar-track 
+{    
+    border-radius: 20px;
+}
+/* End Scroll bar */ 
+
+
+
+/* Status bar*/
+.status-bar 
+{
+    width: 500px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #f1c936;
+    margin: 0px 0px 10px 0px;
+    animation: load 2s linear forwards;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.status-bar:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.status-bar:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.status-bar:nth-child(3) {
+    animation-delay: 4s;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+/*End Status bar*/
